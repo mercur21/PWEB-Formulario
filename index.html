@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Portal Dev</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="">Nosso Portal</a></li>
+                <li><a href="">Cadastro Devs</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section class="section-portal-dev">
+        <h1 class="titulo-portal">Portal Dev</h1>
+        <p class="descricao-portal">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur laborum maiores aut dolorum magnam, autem, laboriosam at dignissimos nihil sunt voluptatibus quasi vel numquam tempore praesentium a, facere adipisci consequatur.</p>
+        <p class="info-portal">Para saber mais, clique no <a href="" class="link-portal">seguinte link</a></p>
+    </section>
+
+    <section class="section-cadastro-dev">
+
+        <form class="form-dev" action="" method="post">
+            <h2 class="titulo-form">Cadastro de Devs</h2>
+
+            <fieldset class="grupo-form">
+                <legend>Dados Pessoais: </legend>
+
+
+                <div class="item-form">
+                    <label for="nome">Nome:* </label>
+                    <input type="text" name="nome" id="nome" placeholder="Informe seu Nome" required>
+                </div>
+
+                <div class="item-form">
+                    <label for="email">Email:* </label>
+                    <input type="email" name="email" id="email" placeholder="Informe seu Email" required>
+                </div>
+
+                <div class="item-form">
+                    <label for="telefone">Telefone:* </label>
+                    <input type="tel" name="telefone" id="telefone" placeholder="Informe seu Telefone" required>
+                </div>
+
+                <div class="item-form">
+                    <label for="data-nascimento">Data Nascimento:* </label>
+                    <input type="date" name="data-nascimento" id="data-nascimento" placeholder="Informe sua Data de Nascimento" required>
+                </div>
+            </fieldset>
+
+
+            <fieldset class="grupo-form">
+                <legend>Dados Profissionais</legend>
+
+                <div class="item-form">
+                    <h3>Qual sua especialização?</h3>
+                    
+                    
+                    <div class="container-radio">
+                        <div class="item-radio">
+                            <input type="radio" name="grupo-espec" id="esp-back" value="backend"> 
+                            <label for="esp-back">Back-end</label>
+                        </div>
+                    <div class="container-radio">
+                        <div class="item-radio">
+                            <input type="radio" name="grupo-espec" id="esp-front" value="frontend"> 
+                            <label for="esp-front">Front-end</label>
+                        </div>
+                    <div class="container-radio">
+                        <div class="item-radio">
+                            <input type="radio" name="grupo-espec" id="esp-full" value="fullstack"> 
+                            <label for="esp-full">Fullstack</label>
+                        </div>
+                    </div>
+    
+                </div>
+
+
+                <div class="item-form">
+                    <h3>Qual seu nível de experiência?</h3>
+
+                    <select name="" id="" class="select-exp">
+                        <option value="" selected>Selecione o seu nível</option>
+                        <option value="estagio">Estágio</option>
+                        <option value="junior">Junior</option>
+                        <option value="pleno">Pleno</option>
+                        <option value="senior">Sênior</option>
+                    </select>
+                </div>
+
+                <div class="item-form">
+                    <h3>Qual a modalidade de trabalho?</h3>
+                    <div class="container-checkbox">
+                        <div class="item-checkbox">
+                            <input type="checkbox" name="grupo-trab" id="hibrido" value="hibrido">
+                            <label for="hibrido">Híbrido</label>
+                        </div>
+                        <div class="item-checkbox">
+                            <input type="checkbox" name="grupo-trab" id="presencial" value="presencial">
+                            <label for="presencial">Presencial</label>
+                        </div>
+                        <div class="item-checkbox">
+                            <input type="checkbox" name="grupo-trab" id="remoto" value="remoto">
+                            <label for="remoto">Remoto</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item-form">
+                    <label for="sobre">Nos conte sobre você</label>
+                    <textarea name="sobre-dev" id="sobre-dev" placeholder="Faça uma descrição sobre suas experiências de vida e profissionais"></textarea>
+                </div>
+                
+            </fieldset>
+
+
+
+            <div class="botoes-form">
+                <input type="reset" value="Limpar">
+                <input type="submit" value="Enviar">
+            </div>
+            
+        </form>
+    </section>
+
+</body>
+</html>
